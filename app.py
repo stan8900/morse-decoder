@@ -23,3 +23,17 @@ def morse_to_text(morse_code):
     
     return ' '.join(decoded_message)
 
+# Function to play the Morse code sound
+def play_morse_code(morse_code):
+    for symbol in morse_code:
+        if symbol == '.':
+            playsound('dot.wav')  # Play dot sound
+            time.sleep(0.1)  # Pause between dots and dashes
+        elif symbol == '-':
+            playsound('dash.wav')  # Play dash sound
+            time.sleep(0.2)
+        elif symbol == ' ':
+            time.sleep(0.5)  # Pause between letters
+        elif symbol == '/':
+            time.sleep(0.7)  # Pause between words
+
