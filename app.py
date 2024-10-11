@@ -37,3 +37,15 @@ def play_morse_code(morse_code):
         elif symbol == '/':
             time.sleep(0.7)  # Pause between words
 
+# Main function
+def main():
+    morse_code_input = input("Enter the Morse code (Use '/' for space between words): ").strip()
+    
+    decoded_message = morse_to_text(morse_code_input)
+    print(f"Decoded Text: {decoded_message}")
+    
+    print("\nPlaying Morse code sound...")
+    play_morse_code(morse_code_input)
+
+if __name__ == "__main__":
+    main()
