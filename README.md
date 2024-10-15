@@ -76,5 +76,5 @@ Playing Morse code sound...
 - Ensure that you have installed the required Python packages.
 
 ### License
-
+    
 This project is licensed under the MIT License.
